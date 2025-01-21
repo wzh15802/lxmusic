@@ -25,7 +25,7 @@ MusicFree-音源
 
 以下音源均收集自开放网络，不对音源稳定性，可用性，时效性提供任何保证。
 -------
-https://gitee.com/maotoumao/MusicFreePlugins/raw/master/plugins.json
+作者：         https://gitee.com/maotoumao/MusicFreePlugins/raw/master/plugins.json
 
 云音乐(kw)：    http://adad23u.appinstall.life/dist/kuwo/index.js
 
@@ -34,3 +34,8 @@ https://gitee.com/maotoumao/MusicFreePlugins/raw/master/plugins.json
 Q音乐(QQ):      http://adad23u.appinstall.life/dist/qq/index.js
 
 哔哩哔哩:        http://adad23u.appinstall.life/dist/bilibili/index.js
+
+无邪：          https://gitee.com/wxej/yy/raw/master/MusicFree.json
+
+彩桐：          http://cdn.teyonds.com/music/plugins.json
+
