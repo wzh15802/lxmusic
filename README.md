@@ -39,3 +39,5 @@ Q音乐(QQ):      http://adad23u.appinstall.life/dist/qq/index.js
 
 彩桐：          http://cdn.teyonds.com/music/plugins.json
 
+
+![](https://raw.githubusercontent.com/hiboxs/a/main/image.png)
