@@ -27,18 +27,15 @@ MusicFree-音源
 -------
 作者：         https://gitee.com/maotoumao/MusicFreePlugins/raw/master/plugins.json
 
-云音乐(kw)：    http://adad23u.appinstall.life/dist/kuwo/index.js
-
-小窝音乐(kw):   https://raw.niuma666bet.buzz/Huibq/keep-alive/master/Music_Free/xiaowo.js
-
-Q音乐(QQ):      http://adad23u.appinstall.life/dist/qq/index.js
-
-哔哩哔哩:        http://adad23u.appinstall.life/dist/bilibili/index.js
+种子：         https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/zz.js
 
 无邪：          https://gitee.com/wxej/yy/raw/master/MusicFree.json
 
 彩桐：          http://cdn.teyonds.com/music/plugins.json
 
+小秋：          http://music.haitangw.net/cqapi/qq.js
+
+本地源：        https://wwad.lanzouu.com/iGfC92wst80f  密码:52pj
 
 # 部分平台解析下载方式 (仅供参考)
 如果不想用三方端，仅是下载某几首，可以临时使用一些解析站点，以下从优到低
