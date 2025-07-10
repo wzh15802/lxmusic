@@ -35,6 +35,8 @@ MusicFree-音源
 
 小秋：          http://music.haitangw.net/cqapi/qq.js
 
+Huibq          https://fastly.jsdelivr.net/gh/Huibq/keep-alive/Music_Free/xiaoyun.js
+
 本地源：        https://wwad.lanzouu.com/iGfC92wst80f  密码:52pj
 
 # 部分平台解析下载方式 (仅供参考)
