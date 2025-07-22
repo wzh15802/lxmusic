@@ -24,6 +24,13 @@ MusicFree-音源
 软件地址 https://github.com/maotoumao/MusicFree/releases
 
 以下音源均收集自开放网络，不对音源稳定性，可用性，时效性提供任何保证。
+
+
+在线插件(从网络安装插件)：      https://www.imwzh.com/musicfree.json  
+已整理合并以下大佬的源。
+
+整合后插件本地包(同以上在线插件)：https://wwfo.lanzoue.com/i933R31kewcd
+
 -------
 作者：         https://gitee.com/maotoumao/MusicFreePlugins/raw/master/plugins.json
 
@@ -37,7 +44,8 @@ MusicFree-音源
 
 Huibq          https://fastly.jsdelivr.net/gh/Huibq/keep-alive/Music_Free/xiaoyun.js
 
-本地源：        https://wwad.lanzouu.com/iGfC92wst80f  密码:52pj
+-------
+
 
 # 部分平台解析下载方式 (仅供参考)
 如果不想用三方端，仅是下载某几首，可以临时使用一些解析站点，以下从优到低
