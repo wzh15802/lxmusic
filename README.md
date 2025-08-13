@@ -23,7 +23,8 @@
 MusicFree-音源
 软件地址 https://github.com/maotoumao/MusicFree/releases
 
-**以下音源均收集自开放网络，不对音源稳定性，可用性，时效性提供任何保证。**
+以下音源均收集自开放网络，不对音源稳定性，可用性，时效性提供任何保证。
+-------
 
 
 在线插件(从网络安装插件)：      https://www.imwzh.com/musicfree.json  
