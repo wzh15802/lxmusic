@@ -23,13 +23,15 @@
 MusicFree-音源
 软件地址 https://github.com/maotoumao/MusicFree/releases
 
-以下音源均收集自开放网络，不对音源稳定性，可用性，时效性提供任何保证。
+**以下音源均收集自开放网络，不对音源稳定性，可用性，时效性提供任何保证。**
 
 
 在线插件(从网络安装插件)：      https://www.imwzh.com/musicfree.json  
 已整理合并以下大佬的源。
 
 整合后插件本地包(同以上在线插件)：https://wwfo.lanzoue.com/i933R31kewcd
+
+其中，元力源最高支持到wy无损
 
 -------
 作者：         https://gitee.com/maotoumao/MusicFreePlugins/raw/master/plugins.json
