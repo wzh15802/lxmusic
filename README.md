@@ -32,7 +32,7 @@ MusicFree-音源
 
 整合后插件本地包(同以上在线插件)：https://wwfo.lanzoue.com/i933R31kewcd
 
-其中，元力源最高支持到wy无损
+其中，元力源最高支持到wy无损: https://13413.kstore.vip/yuanli/%E5%85%83%E5%8A%9B%E9%9F%B3%E4%B9%90.json
 
 -------
 作者：         https://gitee.com/maotoumao/MusicFreePlugins/raw/master/plugins.json
