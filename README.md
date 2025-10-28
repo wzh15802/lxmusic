@@ -75,6 +75,12 @@ https://spotdownloader.com/
 
 备用(音质相对于上个渠道较差)：https://spotimate.io/
 
+### 适用于油吐B平台的解析
+
+https://mp3yt.is/
+
+能支持到320kbps
+
 ### 适用于国内平台
 
 https://www.flac.life/
