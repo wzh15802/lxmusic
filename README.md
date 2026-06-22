@@ -106,7 +106,7 @@ https://mp3yt.is/
 
 ### 适用于国内平台
 
-[https://www.flac.life/](https://flac.music.hi.cn/)
+https://flac.music.hi.cn/
 
 支持ku我和网抑Y，最高支持FLAC。自主搜索可听可下
 
