@@ -32,7 +32,7 @@ MusicFree-音源
 
 整合后插件本地包(同以上在线插件)：https://wwfo.lanzoue.com/i933R31kewcd
 
-其中，元力源最高支持到wy无损（最新-1.1.0版本）: https://13413.kstore.vip/yuanli/yuanli.json   
+其中，元力源最高支持到wy无损（最新-1.2.0版本）: https://13413.kstore.vip/yuanli/yuanli.json   
 
 ~~元力0.1.0版本已失效：https://13413.kstore.vip/yuanli/%E5%85%83%E5%8A%9B%E9%9F%B3%E4%B9%90.json~~
 
@@ -52,6 +52,15 @@ Huibq          https://fastly.jsdelivr.net/gh/Huibq/keep-alive/Music_Free/xiaoyu
 -------
 
 
+# 青听音乐
+
+软件地址: https://github.com/kejichangqing/QingMusic/releases
+
+音源地址: https://13413.kstore.vip/QingMusic/music.json
+
+Windows端： https://www.yuque.com/kejichangqing/gyfn8a/ggzhwkvx777sex3y
+
+
 # 部分平台解析下载方式 (仅供参考)
 
 如果不想用三方端，仅仅是**下载**某几首，可以临时使用一些解析站点，以下从优到低
@@ -60,11 +69,19 @@ Huibq          https://fastly.jsdelivr.net/gh/Huibq/keep-alive/Music_Free/xiaoyu
 
 以下是一些整理出来的方案：
 
+### 首推 - GD音乐台国内版 - GDSTUDIO
+
+https://music.gdstudio.org/
+
+秘方：选中红色渠道，搜索框输入“GDSTUDIO” 后点击搜索，有惊喜；
+
+本渠道对Q渠道支持较差，但其他通道非常优质，最高支持24bit高质量无损
+
 ### 部分无损下载
 
-https://tidal.qqdl.site/
+~~https://tidal.qqdl.site/~~  已跳转到 https://lucida.to/  仅能解析链接
 
-无需梯子，可直接搜索下载无损版
+~~无需梯子，可直接搜索下载无损版~~   
 
 
 ### 适用于亚马x等平台的无损解析
@@ -89,9 +106,9 @@ https://mp3yt.is/
 
 ### 适用于国内平台
 
-https://www.flac.life/
+[https://www.flac.life/](https://flac.music.hi.cn/)
 
-经测试，基本确认调用的酷W的，最高支持FLAC。网抑Y的就放弃此渠道吧
+支持ku我和网抑Y，最高支持FLAC。自主搜索可听可下
 
 ### 其他边角料
 
