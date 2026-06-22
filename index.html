@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>洛雪音源/MusicFree音源及全渠道无损音乐免费下载</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#8b5cf6',
+                        dark: '#1e293b',
+                        light: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+            }
+            .link-effect {
+                @apply relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full;
+            }
+            .link-group {
+                @apply flex flex-wrap items-center gap-2 mb-2;
+            }
+            /* 新增：强制长文本换行的工具类 */
+            .break-all-text {
+                word-break: break-all;
+                overflow-wrap: break-word;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 min-h-screen opacity-0 transition-opacity duration-500">
+    <!-- 顶部导航 -->
+    <header class="bg-gradient-to-r from-primary to-secondary text-white shadow-md">
+        <div class="container mx-auto px-4 py-6 md:py-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-center text-shadow">
+                <i class="fa fa-music mr-3"></i>洛雪音源/MusicFree音源及全渠道无损音乐免费下载解析<i class="fa fa-music mr-3"></i>
+            </h1>
+            <p class="text-center mt-2 opacity-90">说明：如果想要在手机/电脑平台听歌代替客户端软件，选择<a href="#luoxue" style="border-bottom:2px #fff solid; font-weight:bold;">洛雪音乐</a>、<a href="#musicfree" style="border-bottom:2px #fff solid; font-weight:bold;">MusicFree</a>、及<a href="#qingtin" style="border-bottom:2px #fff solid; font-weight:bold;">青听音乐</a>；如果仅仅是临时下载一两首请往下翻，使用<a href="#xiazai" style="border-bottom:2px #fff solid; font-weight:bold;">其他在线解析下载</a></p>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- GitHub项目信息 -->
+        <div class="bg-white rounded-xl shadow-md p-6 mb-8 transform transition-all duration-500 hover:shadow-xl">
+            <div class="flex items-center flex-wrap">
+                <span class="text-lg font-semibold mr-3">GitHub项目:</span>
+                <img src="https://img.shields.io/github/stars/wzh15802/lxmusic.svg" alt="GitHub Stars" class="h-6 mr-3 my-2"> 
+                <img src="https://img.shields.io/github/forks/wzh15802/lxmusic.svg" alt="GitHub Stars" class="h-6 mr-3 my-2">
+                <a href="https://github.com/wzh15802/lxmusic" target="_blank" class="text-primary font-medium link-effect flex items-center break-all-text">
+                    查看项目 <i class="fa fa-external-link ml-1 text-sm"></i>
+                </a>
+            </div>
+            <img src="https://api.star-history.com/svg?repos=wzh15802/lxmusic&type=date&legend=top-left" />
+        </div>
+
+        <!-- 洛雪软件及音源 -->
+        <section class="mb-10">
+            <div class="flex items-center mb-4">
+                <div class="bg-primary text-white p-2 rounded-lg mr-3">
+                    <i class="fa fa-snowflake-o text-xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800" id="luoxue">洛雪软件及音源</h2>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+                <div class="mb-4">
+                    <h3 class="font-semibold text-lg mb-2 text-gray-700" >洛雪软件下载地址</h3>
+                    <div class="link-group">
+                        <a href="https://github.com/lyswhut/lx-music-desktop/releases" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                            https://github.com/lyswhut/lx-music-desktop/releases
+                        </a>
+                        <button onclick="copyToClipboard(this)" data-url="https://github.com/lyswhut/lx-music-desktop/releases" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                            <i class="fa fa-copy"></i> 复制
+                        </button>
+                        <img src="https://img.shields.io/github/package-json/v/lyswhut/lx-music-desktop" class="h-6 mr-3 my-2">
+                    </div>
+                </div>
+                <div>官网地址：<a href="https://lxmusic.toside.cn/" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">lyswhut.github.io/lx-music-doc/</a></div><br><br>
+                <table cellpadding="8" cellspacing="0" style="border-collapse: collapse; border:2px solid #dfe2e5;">
+                    <thead>
+                        <tr style="border: 1px solid #dfe2e5; padding: 8px;">
+                            <th style="border: 1px solid #dfe2e5; padding: 8px;">版本类型</th>
+                            <th style="border: 1px solid #dfe2e5; padding: 8px;">下载地址</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border: 1px solid #dfe2e5; padding: 8px;">
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;">win7 64位绿色版</td>
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;"><a href="https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.0/lx-music-desktop-v2.12.0-win7_x64-green.7z" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.0/lx-music-desktop-v2.12.0-win7_x64-green.7z</a></td>
+                        </tr>
+                        <tr style="border: 1px solid #dfe2e5; padding: 8px;">
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;">win7 64位安装版</td>
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;"><a href="https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.0/lx-music-desktop-v2.12.0-win7_x64-Setup.exe" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.0/lx-music-desktop-v2.12.0-win7_x64-Setup.exe</a></td>
+                        </tr>
+                        <tr style="border: 1px solid #dfe2e5; padding: 8px;">
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;">win7 x86绿色版</td>
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;"><a href="https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.0/lx-music-desktop-v2.12.0-win7_x86-green.7z" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.0/lx-music-desktop-v2.12.0-win7_x86-green.7z</a></td>
+                        </tr>
+                        <tr style="border: 1px solid #dfe2e5; padding: 8px;">
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;">winARM架构64位绿色版</td>
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;"><a href="https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.0/lx-music-desktop-v2.12.0-win_arm64-green.7z" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.0/lx-music-desktop-v2.12.0-win_arm64-green.7z</a></td>
+                        </tr>
+                        <tr style="border: 1px solid #dfe2e5; padding: 8px;">
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;">win64位绿色版</td>
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;"><a href="https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.0/lx-music-desktop-v2.12.0-win_x64-green.7z" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.0/lx-music-desktop-v2.12.0-win_x64-green.7z</a></td>
+                        </tr>
+                        <tr style="border: 1px solid #dfe2e5; padding: 8px;">
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;">win64位安装包</td>
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;"><a href="https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.0/lx-music-desktop-v2.12.0-x64-Setup.exe" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.0/lx-music-desktop-v2.12.0-x64-Setup.exe</a></td>
+                        </tr>
+                        <tr style="border: 1px solid #dfe2e5; padding: 8px;">
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;">手机版</td>
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;">建议优先下载 <code>arm64-v8a</code> 安装包，若无法安装再下载 <code>universal</code> 安装包。</td>
+                        </tr>
+                        <tr style="border: 1px solid #dfe2e5; padding: 8px;">
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;">【建议版本】lx-music-mobile-v1.8.1-arm64-v8a.apk</td>
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;"><a href="https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-mobile/releases/download/v1.8.1/lx-music-mobile-v1.8.1-arm64-v8a.apk" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-mobile/releases/download/v1.8.1/lx-music-mobile-v1.8.1-arm64-v8a.apk</a></td>
+                        </tr>
+                        <tr style="border: 1px solid #dfe2e5; padding: 8px;">
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;">lx-music-mobile-v1.8.1-armeabi-v7a.apk</td>
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;"><a href="https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-mobile/releases/download/v1.8.1/lx-music-mobile-v1.8.1-armeabi-v7a.apk" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-mobile/releases/download/v1.8.1/lx-music-mobile-v1.8.1-armeabi-v7a.apk</a></td>
+                        </tr>
+                        <tr style="border: 1px solid #dfe2e5; padding: 8px;">
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;">lx-music-mobile-v1.8.1-universal.apk</td>
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;"><a href="https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-mobile/releases/download/v1.8.1/lx-music-mobile-v1.8.1-universal.apk" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-mobile/releases/download/v1.8.1/lx-music-mobile-v1.8.1-universal.apk</a></td>
+                        </tr>
+                        <tr style="border: 1px solid #dfe2e5; padding: 8px;">
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;">lx-music-mobile-v1.8.1-x86.apk</td>
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;"><a href="https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-mobile/releases/download/v1.8.1/lx-music-mobile-v1.8.1-x86.apk" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-mobile/releases/download/v1.8.1/lx-music-mobile-v1.8.1-x86.apk</a></td>
+                        </tr>
+                        <tr style="border: 1px solid #dfe2e5; padding: 8px;">
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;">lx-music-mobile-v1.8.1-x86_64.apk</td>
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;"><a href="https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-mobile/releases/download/v1.8.1/lx-music-mobile-v1.8.1-x86_64.apk" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">https://ghproxy.cxkpro.top/https://github.com/lyswhut/lx-music-mobile/releases/download/v1.8.1/lx-music-mobile-v1.8.1-x86_64.apk</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/><br/>
+                    <div>
+                    <h3 class="font-semibold text-lg mb-2 text-gray-700">洛雪软件在线导入音源(部分)</h3>
+                    <p class="text-gray-600 leading-relaxed mb-3">
+                        以下提供部分适用于最新版的音源，直接复制后在线导入即可使用(手机端同)，如提示失效替换https://gh-proxy.com/加速地址即可
+                    </p>
+                    
+                    <div class="space-y-4 pl-4 border-l-2 border-gray-100">
+                        <div>
+                            <span class="font-medium">音源1，由GDSTUDIO提供：</span>
+                            <div class="link-group ml-6 mt-1">
+                                <a href="https://gh-proxy.com/https://raw.githubusercontent.com/wzh15802/lxmusic/refs/heads/main/GD%E9%9F%B3%E4%B9%90%E5%8F%B0-v1.0.0.js" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                    https://gh-proxy.com/https://raw.githubusercontent.com/wzh15802/lxmusic/refs/heads/main/GD%E9%9F%B3%E4%B9%90%E5%8F%B0-v1.0.0.js
+                                </a>
+                                <button onclick="copyToClipboard(this)" data-url="https://gh-proxy.com/https://raw.githubusercontent.com/wzh15802/lxmusic/refs/heads/main/GD%E9%9F%B3%E4%B9%90%E5%8F%B0-v1.0.0.js" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fa fa-copy"></i> 复制
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <span class="font-medium">音源2，由洛雪科技 独家音源提供：</span>
+                            <div class="link-group ml-6 mt-1">
+                                <a href="https://gh-proxy.com/https://raw.githubusercontent.com/wzh15802/lxmusic/refs/heads/main/%5B%E7%8B%AC%E5%AE%B6%E9%9F%B3%E6%BA%90%5D%20v4.0.js" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                    https://gh-proxy.com/https://raw.githubusercontent.com/wzh15802/lxmusic/refs/heads/main/%5B%E7%8B%AC%E5%AE%B6%E9%9F%B3%E6%BA%90%5D%20v4.0.js
+                                </a>
+                                <button onclick="copyToClipboard(this)" data-url="https://gh-proxy.com/https://raw.githubusercontent.com/wzh15802/lxmusic/refs/heads/main/%5B%E7%8B%AC%E5%AE%B6%E9%9F%B3%E6%BA%90%5D%20v4.0.js" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fa fa-copy"></i> 复制
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <span class="font-medium">音源3，聚合API接口 (by lerd)：</span>
+                            <div class="link-group ml-6 mt-1">
+                                <a href="https://gh-proxy.com/https://github.com/wzh15802/lxmusic/raw/refs/heads/main/%E8%81%9A%E5%90%88API%E6%8E%A5%E5%8F%A3.js" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                    https://gh-proxy.com/https://github.com/wzh15802/lxmusic/raw/refs/heads/main/%E8%81%9A%E5%90%88API%E6%8E%A5%E5%8F%A3.js
+                                </a>
+                                <button onclick="copyToClipboard(this)" data-url="https://gh-proxy.com/https://github.com/wzh15802/lxmusic/raw/refs/heads/main/%E8%81%9A%E5%90%88API%E6%8E%A5%E5%8F%A3.js" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fa fa-copy"></i> 复制
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <span class="font-medium">音源4，长青SVIP音源</span>
+                            <div class="link-group ml-6 mt-1">
+                                <a href="https://gh-proxy.com/https://github.com/wzh15802/lxmusic/blob/main/%E9%95%BF%E9%9D%92SVIP%E9%9F%B3%E6%BA%90v1.1.1%EF%BC%88%E6%94%AF%E6%8C%81%E6%97%A0%E6%8D%9F%EF%BC%89.js" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                    https://gh-proxy.com/https://github.com/wzh15802/lxmusic/blob/main/%E9%95%BF%E9%9D%92SVIP%E9%9F%B3%E6%BA%90v1.1.1%EF%BC%88%E6%94%AF%E6%8C%81%E6%97%A0%E6%8D%9F%EF%BC%89.js
+                                </a>
+                                <button onclick="copyToClipboard(this)" data-url="https://gh-proxy.com/https://github.com/wzh15802/lxmusic/blob/main/%E9%95%BF%E9%9D%92SVIP%E9%9F%B3%E6%BA%90v1.1.1%EF%BC%88%E6%94%AF%E6%8C%81%E6%97%A0%E6%8D%9F%EF%BC%89.js" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fa fa-copy"></i> 复制
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-2 text-gray-700">音源及说明</h3>
+                    <div>音源下载地址</div>
+                    <div class="link-group">
+                        <a href="https://github.com/wzh15802/lxmusic" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                            https://github.com/wzh15802/lxmusic
+                        </a>
+                        <button onclick="copyToClipboard(this)" data-url="https://github.com/wzh15802/lxmusic" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                            <i class="fa fa-copy"></i> 复制
+                        </button>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-3">
+                        均收集自开放网络，不对音源稳定性，可用性，时效性提供任何保证。<br><br>
+                        部分音源仅适用于v.2.5.0以下； 部分适用于v2.6.0以上<br><br>
+                        如果版本不对应，则可能导致"初始化失败"<br><br>
+                        六音音源：v1.1.0版本后已经移除了网易云的支持，且仅支持洛雪PC端v2.6.0/移动端v1.2.0及以后的版本<br><br>
+                        建议全部导入，自行测试不同音源与不同音乐平台之间的关系。<br><br>
+                        部分音源+平台，可最高支持到"FLAC无损音质"。
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-2 text-gray-700">支持洛雪音源的其他软件 - Ceru Music 澜音播放器</h3>
+                    <div>官网：
+                        <div class="link-group">
+                            <a href="https://ceru.docs.shiqianjiang.cn/" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                https://ceru.docs.shiqianjiang.cn/
+                            </a>
+                            <button onclick="copyToClipboard(this)" data-url="https://ceru.docs.shiqianjiang.cn/" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                <i class="fa fa-copy"></i> 复制
+                            </button>
+                        </div>
+                    </div>
+                    <div>软件下载：
+                        <div class="link-group">
+                            <a href="https://ghproxy.cxkpro.top/https://github.com/timeshiftsauce/CeruMusic/releases/download/v1.9.6/ceru-music-1.9.6-win-x64-setup.exe" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                https://ghproxy.cxkpro.top/https://github.com/timeshiftsauce/CeruMusic/releases/download/v1.9.6/ceru-music-1.9.6-win-x64-setup.exe
+                            </a>
+                            <button onclick="copyToClipboard(this)" data-url="https://ghproxy.cxkpro.top/https://github.com/timeshiftsauce/CeruMusic/releases/download/v1.9.6/ceru-music-1.9.6-win-x64-setup.exe" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                <i class="fa fa-copy"></i> 复制
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-3">UI界面风格较洛雪要好</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MusicFree软件及音源 -->
+        <section class="mb-10">
+            <div class="flex items-center mb-4">
+                <div class="bg-secondary text-white p-2 rounded-lg mr-3">
+                    <i class="fa fa-headphones text-xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800" id="musicfree">MusicFree软件及音源</h2>
+            </div>
+           
+            <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+                <div class="mb-4">
+                    <h3 class="font-semibold text-lg mb-2 text-gray-700">MusicFree软件下载地址</h3>
+                    <div class="link-group">
+                        <a href="https://github.com/maotoumao/MusicFree/releases" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                            https://github.com/maotoumao/MusicFree/releases
+                        </a>
+                        <button onclick="copyToClipboard(this)" data-url="https://github.com/maotoumao/MusicFree/releases" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                            <i class="fa fa-copy"></i> 复制
+                        </button>
+                        <img src="https://img.shields.io/github/package-json/v/maotoumao/MusicFree" class="h-6 mr-3 my-2">
+                    </div>
+                    
+                </div>
+                 <div>官网地址：<a href="https://musicfree.catcat.work/" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">https://musicfree.catcat.work/</a></div><br><br>
+                 
+                 <div>官方软件下载地址：<a href="https://my.feishu.cn/drive/folder/FVJIfuGKzlbMDVdmPQpcniHgnFe" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">https://my.feishu.cn/drive/folder/FVJIfuGKzlbMDVdmPQpcniHgnFe</a></div><br><br>
+                 
+                <div>
+                    <h3 class="font-semibold text-lg mb-2 text-gray-700">音源及说明</h3>
+                    <p class="text-gray-600 leading-relaxed mb-3">
+                        以下音源均收集自开放网络，不对音源稳定性，可用性，时效性提供任何保证。
+                    </p>
+                    
+                    <div class="space-y-4 pl-4 border-l-2 border-gray-100">
+                        <div>
+                            <span class="font-medium">在线插件(从网络安装插件)：</span>
+                            <div class="link-group ml-6 mt-1">
+                                <a href="https://www.imwzh.com/musicfree.json" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                    https://www.imwzh.com/musicfree.json
+                                </a>
+                                <button onclick="copyToClipboard(this)" data-url="https://www.imwzh.com/musicfree.json" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fa fa-copy"></i> 复制
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <span class="font-medium">整合后插件本地包：</span>
+                            <div class="link-group ml-6 mt-1">
+                                <a href="https://wwfo.lanzoue.com/i933R31kewcd" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                    https://wwfo.lanzoue.com/i933R31kewcd
+                                </a>
+                                <button onclick="copyToClipboard(this)" data-url="https://wwfo.lanzoue.com/i933R31kewcd" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fa fa-copy"></i> 复制
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <span class="font-medium">元力源(最新1.1.0版本)：</span>
+                            <div class="link-group ml-6 mt-1">
+                                <a href="https://13413.kstore.vip/yuanli/yuanli.json" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                    https://13413.kstore.vip/yuanli/yuanli.json
+                                </a>
+                                <button onclick="copyToClipboard(this)" data-url="https://13413.kstore.vip/yuanli/yuanli.json" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fa fa-copy"></i> 复制
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <span class="font-medium">作者：</span>
+                            <div class="link-group ml-6 mt-1">
+                                <a href="https://gitee.com/maotoumao/MusicFreePlugins/raw/master/plugins.json" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                    https://gitee.com/maotoumao/MusicFreePlugins/raw/master/plugins.json
+                                </a>
+                                <button onclick="copyToClipboard(this)" data-url="https://gitee.com/maotoumao/MusicFreePlugins/raw/master/plugins.json" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fa fa-copy"></i> 复制
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <span class="font-medium">种子：</span>
+                            <div class="link-group ml-6 mt-1">
+                                <a href="https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/zz.js" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                    https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/zz.js
+                                </a>
+                                <button onclick="copyToClipboard(this)" data-url="https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/zz.js" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fa fa-copy"></i> 复制
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <span class="font-medium">无邪：</span>
+                            <div class="link-group ml-6 mt-1">
+                                <a href="https://gitee.com/wxej/yy/raw/master/MusicFree.json" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                    https://gitee.com/wxej/yy/raw/master/MusicFree.json
+                                </a>
+                                <button onclick="copyToClipboard(this)" data-url="https://gitee.com/wxej/yy/raw/master/MusicFree.json" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fa fa-copy"></i> 复制
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <span class="font-medium">彩桐：</span>
+                            <div class="link-group ml-6 mt-1">
+                                <a href="http://cdn.teyonds.com/music/plugins.json" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                    http://cdn.teyonds.com/music/plugins.json
+                                </a>
+                                <button onclick="copyToClipboard(this)" data-url="http://cdn.teyonds.com/music/plugins.json" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fa fa-copy"></i> 复制
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <span class="font-medium">小秋：</span>
+                            <div class="link-group ml-6 mt-1">
+                                <a href="http://music.haitangw.net/cqapi/qq.js" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                    http://music.haitangw.net/cqapi/qq.js
+                                </a>
+                                <button onclick="copyToClipboard(this)" data-url="http://music.haitangw.net/cqapi/qq.js" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fa fa-copy"></i> 复制
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <span class="font-medium">Huibq：</span>
+                            <div class="link-group ml-6 mt-1">
+                                <a href="https://fastly.jsdelivr.net/gh/Huibq/keep-alive/Music_Free/xiaoyun.js" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                    https://fastly.jsdelivr.net/gh/Huibq/keep-alive/Music_Free/xiaoyun.js
+                                </a>
+                                <button onclick="copyToClipboard(this)" data-url="https://fastly.jsdelivr.net/gh/Huibq/keep-alive/Music_Free/xiaoyun.js" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fa fa-copy"></i> 复制
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 青听软件及音源 -->
+        <section class="mb-10">
+            <div class="flex items-center mb-4">
+                <div class="bg-secondary text-white p-2 rounded-lg mr-3">
+                    <i class="fa fa-headphones text-xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800" id="qingtin">青听软件及音源</h2>
+            </div>
+           
+            <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+                <div class="mb-4">
+                    <h3 class="font-semibold text-lg mb-2 text-gray-700">青听软件下载地址</h3>
+                    <div class="link-group">
+                        <a href="https://github.com/kejichangqing/QingMusic/releases" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                            https://github.com/kejichangqing/QingMusic/releases
+                        </a>
+                        <button onclick="copyToClipboard(this)" data-url="https://github.com/kejichangqing/QingMusic/releases" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                            <i class="fa fa-copy"></i> 复制
+                        </button>
+                        <img src="https://img.shields.io/github/v/release/kejichangqing/QingMusic" class="h-6 mr-3 my-2">
+                    </div>
+                    
+                    <table cellpadding="8" cellspacing="0" style="border-collapse: collapse; border:2px solid #dfe2e5;">
+                    <thead>
+                        <tr style="border: 1px solid #dfe2e5; padding: 8px;">
+                            <th style="border: 1px solid #dfe2e5; padding: 8px;">版本类型</th>
+                            <th style="border: 1px solid #dfe2e5; padding: 8px;">下载地址</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border: 1px solid #dfe2e5; padding: 8px;">
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;">QingMusic.v1.3.3-arm64-v8a.apk</td>
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;"><a href="https://ghproxy.cxkpro.top/https://github.com/kejichangqing/QingMusic/releases/download/v1.3.3/QingMusic.v1.3.3-arm64-v8a.apk" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">https://ghproxy.cxkpro.top/https://github.com/kejichangqing/QingMusic/releases/download/v1.3.3/QingMusic.v1.3.3-arm64-v8a.apk</a></td>
+                        </tr>
+                        <tr style="border: 1px solid #dfe2e5; padding: 8px;">
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;">QingMusic.v1.3.3-armeabi-v7a.apk
+</td>
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;"><a href="https://ghproxy.cxkpro.top/https://github.com/kejichangqing/QingMusic/releases/download/v1.3.3/QingMusic.v1.3.3-armeabi-v7a.apk" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">https://ghproxy.cxkpro.top/https://github.com/kejichangqing/QingMusic/releases/download/v1.3.3/QingMusic.v1.3.3-armeabi-v7a.apk</a></td>
+                        </tr>
+                        <tr style="border: 1px solid #dfe2e5; padding: 8px;">
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;">QingMusic.v1.3.3-x86-release.apk
+</td>
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;"><a href="https://ghproxy.cxkpro.top/https://github.com/kejichangqing/QingMusic/releases/download/v1.3.3/QingMusic.v1.3.3-x86-release.apk" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">https://ghproxy.cxkpro.top/https://github.com/kejichangqing/QingMusic/releases/download/v1.3.3/QingMusic.v1.3.3-x86-release.apk</a></td>
+                        </tr>
+                        <tr style="border: 1px solid #dfe2e5; padding: 8px;">
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;">QingMusic.v1.3.3-x86_64-release.apk
+</td>
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;"><a href="https://ghproxy.cxkpro.top/https://github.com/kejichangqing/QingMusic/releases/download/v1.3.3/QingMusic.v1.3.3-x86_64-release.apk" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">https://ghproxy.cxkpro.top/https://github.com/kejichangqing/QingMusic/releases/download/v1.3.3/QingMusic.v1.3.3-x86_64-release.apk</a></td>
+                        </tr>
+                                                <tr style="border: 1px solid #dfe2e5; padding: 8px;">
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;">WIN端
+</td>
+                            <td style="border: 1px solid #dfe2e5; padding: 8px;"><a href="https://wwasa.lanzoue.com/iAn6G3ka4lwb" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">https://wwasa.lanzoue.com/iAn6G3ka4lwb</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                    
+                </div>
+                 <br>
+                <div>
+                    <h3 class="font-semibold text-lg mb-2 text-gray-700">音源配置地址</h3>
+                    <p class="text-gray-600 leading-relaxed mb-3">
+                        以下音源均收集自开放网络，不对音源稳定性，可用性，时效性提供任何保证。
+                    </p>
+                    <div>
+                        <a href="https://13413.kstore.space/QingMusic/music.json" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                            https://13413.kstore.space/QingMusic/music.json
+                        </a>
+                        <button onclick="copyToClipboard(this)" data-url="https://13413.kstore.space/QingMusic/music.json" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                            <i class="fa fa-copy"></i> 复制
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 其他在线解析下载 -->
+        <section class="mb-10">
+            <div class="flex items-center mb-4">
+                <div class="bg-purple-500 text-white p-2 rounded-lg mr-3">
+                    <i class="fa fa-link text-xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800" id="xiazai">其他在线解析下载</h2>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    如果不想用三方端，仅仅是下载某几首，可以临时使用一些解析站点，以下从优到低
+                </p>
+                
+                <div class="space-y-6">
+                    
+                    <!-- GD音乐台 -->
+                    <div class="p-4 bg-gray-50 rounded-lg border border-gray-100">
+                        <h3 class="font-semibold text-lg mb-3 text-gray-700 flex items-center">
+                            <i class="fa fa-star text-yellow-400 mr-2"></i>首推 - GD音乐台国内版 - GDSTUDIO
+                        </h3>
+                        <div class="link-group">
+                            <a href="https://music.gdstudio.org/" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                https://music.gdstudio.org/
+                            </a>
+                            <button onclick="copyToClipboard(this)" data-url="https://music.gdstudio.org/" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                <i class="fa fa-copy"></i> 复制
+                            </button>
+                        </div>
+                        <p class="text-gray-600">秘方：选中红色渠道，搜索框输入“GDSTUDIO” 后点击搜索，有惊喜；<br/><br/>本渠道对Q渠道支持较差，但其他通道非常优质，最高支持24bit高质量无损</p>
+                    </div>
+                    <!-- 适用于亚马逊等平台的无损解析 -->
+                    <div class="p-4 bg-gray-50 rounded-lg border border-gray-100">
+                        <h3 class="font-semibold text-lg mb-3 text-gray-700 flex items-center">
+                            <i class="fa fa-amazon text-amber-600 mr-2 text-xl"></i>适用于亚马逊等平台的无损解析
+                        </h3>
+                        <div class="link-group">
+                            <a href="https://doubledouble.top/" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                https://doubledouble.top/
+                            </a>
+                            <button onclick="copyToClipboard(this)" data-url="https://doubledouble.top/" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                <i class="fa fa-copy"></i> 复制
+                            </button>
+                        </div>
+                        <p class="text-gray-600">最高支持到FLAC（注：此平台由原站 <a href="https://lucida.su/" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text"> https://lucida.su/</a> 进化而来，该平台支持站点较多，其他请自测）</p>
+                    </div>
+                    
+                    <!-- 适用于Spotify等平台的解析 -->
+                    <div class="p-4 bg-gray-50 rounded-lg border border-gray-100">
+                        <h3 class="font-semibold text-lg mb-3 text-gray-700 flex items-center">
+                            <i class="fa fa-spotify text-green-500 mr-2 text-xl"></i>适用于Spotify等平台的解析
+                        </h3>
+                        <div class="link-group mb-3">
+                            <a href="https://spotdownloader.com/" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                https://spotdownloader.com/
+                            </a>
+                            <button onclick="copyToClipboard(this)" data-url="https://spotdownloader.com/" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                <i class="fa fa-copy"></i> 复制
+                            </button>
+                        </div>
+                        <p class="text-gray-600 mb-2">推荐此渠道，最高支持到320kbps</p>
+                        <div>
+                            <span class="text-gray-600 mr-2">备用(音质相对于上个渠道较差)：</span>
+                            <div class="link-group">
+                                <a href="https://spotimate.io/" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                    https://spotimate.io/
+                                </a>
+                                <button onclick="copyToClipboard(this)" data-url="https://spotimate.io/" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                    <i class="fa fa-copy"></i> 复制
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 适用于YouTube平台的解析 -->
+                    <div class="p-4 bg-gray-50 rounded-lg border border-gray-100">
+                        <h3 class="font-semibold text-lg mb-3 text-gray-700 flex items-center">
+                            <i class="fa fa-youtube-play text-red-600 mr-2 text-xl"></i>适用于YouTube平台的解析
+                        </h3>
+                        <div class="link-group">
+                            <a href="https://mp3yt.is/" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                https://mp3yt.is/
+                            </a>
+                            <button onclick="copyToClipboard(this)" data-url="https://mp3yt.is/" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                <i class="fa fa-copy"></i> 复制
+                            </button>
+                        </div>
+                        <p class="text-gray-600">能支持到320kbps</p>
+                    </div>
+                    
+                    <!-- 适用于国内平台 -->
+                    <div class="p-4 bg-gray-50 rounded-lg border border-gray-100">
+                        <h3 class="font-semibold text-lg mb-3 text-gray-700 flex items-center">
+                            <i class="fa fa-music text-primary mr-2 text-xl"></i>适用于国内平台
+                        </h3>
+                        <div class="link-group">
+                            <a href="https://flac.music.hi.cn/" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                https://flac.music.hi.cn/
+                            </a>
+                            <button onclick="copyToClipboard(this)" data-url="https://flac.music.hi.cn/" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                <i class="fa fa-copy"></i> 复制
+                            </button>
+                        </div>
+                        <p class="text-gray-600">支持ku我和网抑Y，最高支持FLAC。自主搜索可听可下</p>
+                    </div>
+                    
+                    <!-- 其他边角料 -->
+                    <div class="p-4 bg-gray-50 rounded-lg border border-gray-100">
+                        <h3 class="font-semibold text-lg mb-3 text-gray-700 flex items-center">
+                            <i class="fa fa-ellipsis-h text-gray-400 mr-2"></i>其他边角料
+                        </h3>
+                        
+                        <div class="space-y-4 pl-4">
+                            <div>
+                                <div class="link-group">
+                                    <a href="https://musicjx.com/" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                        https://musicjx.com/
+                                    </a>
+                                    <button onclick="copyToClipboard(this)" data-url="https://musicjx.com/" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                        <i class="fa fa-copy"></i> 复制
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="link-group">
+                                    <a href="http://www.xmsj.org/" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                        http://www.xmsj.org/
+                                    </a>
+                                    <button onclick="copyToClipboard(this)" data-url="http://www.xmsj.org/" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                        <i class="fa fa-copy"></i> 复制
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <p class="text-gray-600">
+                                搜索多站合一音乐搜索，就会出来一大堆，此源码来自于 
+                                <a href="https://github.com/maicong/music" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                    https://github.com/maicong/music
+                                </a>，已停止更新
+                            </p>
+                            
+                            <p class="text-gray-600">
+                                后有其他人发布修复版 
+                                <a href="https://blog.cccyun.cn/post-314.html" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                    https://blog.cccyun.cn/post-314.html
+                                </a> 其演示站 
+                                <a href="http://music.hi.cn/" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                    http://music.hi.cn/
+                                </a> 目测也是多年前就停更
+                            </p>
+                            
+                            <p class="text-gray-600">
+                                此类均调用官方接口，也就是说官方有试听这里即使下载完成也仅有试听片段~ 同理，安装个IDM也能抓到下载试听……<br><br>
+                                解解馋得了。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 解锁器 -->
+                    <div class="p-4 bg-gray-50 rounded-lg border border-gray-100">
+                        <h3 class="font-semibold text-lg mb-3 text-gray-700 flex items-center">
+                            <i class="fa fa-unlock-alt text-green-500 mr-2"></i>音乐解锁
+                        </h3>
+                        <div class="link-group">
+                            <a href="http://unlock.music.hi.cn/" target="_blank" class="text-primary hover:text-secondary transition-colors duration-300 break-all-text">
+                                http://unlock.music.hi.cn/
+                            </a>
+                            <button onclick="copyToClipboard(this)" data-url="http://unlock.music.hi.cn/" class="text-gray-500 hover:text-primary transition-colors duration-300">
+                                <i class="fa fa-copy"></i> 复制
+                            </button>
+                        </div>
+                        <p class="text-gray-600">移除已购音乐的加密保护，支持转换网易云音乐(ncm), QQ音乐(qmc, mflac, mgg), 酷狗音乐(kgm), 虾米音乐(xm), 酷我音乐(kwm) </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">支持洛雪的部分音源；支持MusicFree的音源</p>
+            <p class="text-gray-400 text-sm">
+                免责声明：本站仅提供洛雪和MusicFree的音源资源汇总，不提供任何音乐文件下载，所有资源均来自网络，版权归原作者所有。<br /><br />
+                <a href="https://image.imwzh.com/2024/2024012303.png" style="display:inline-block;" target="_blank"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7-%E6%AD%A6%E5%BF%97%E7%BA%A2%E7%9A%84%E6%9D%82%E8%B4%A7%E9%93%BA-brightgreen.svg"></a>
+                <a href="https://www.imwzh.com" style="display:inline-block;" target="_blank"><img src="https://img.shields.io/badge/%E5%8D%9A%E5%AE%A2-%E6%AD%A6%E5%BF%97%E7%BA%A2%E7%9A%84%E6%9D%82%E8%B4%A7%E9%93%BA-blue.svg"></a>
+                <a href="https://weibo.com/u/2301649775" style="display:inline-block;" target="_blank"><img src="https://img.shields.io/badge/%E5%BE%AE%E5%8D%9A-%E6%AD%A6%E5%BF%97%E7%BA%A2%E7%9A%84%E6%9D%82%E8%B4%A7%E9%93%BA-red.svg"></a>
+                <a href="https://github.com/wzh15802" style="display:inline-block;" target="_blank"><img src="https://img.shields.io/badge/GitHub-wzh15802-black.svg"></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" class="fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-secondary">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- 通知提示 -->
+    <div id="notification" class="fixed top-6 right-0 bg-gray-800 text-white px-4 py-3 rounded-lg shadow-lg transform translate-x-full transition-transform duration-300 flex items-center">
+        <i class="fa fa-check-circle mr-2 text-green-400"></i>
+        <span id="notificationText">链接已复制</span>
+    </div>
+
+    <script>
+        // 复制到剪贴板功能
+        function copyToClipboard(button) {
+            const url = button.getAttribute('data-url');
+            navigator.clipboard.writeText(url).then(() => {
+                showNotification('链接已复制到剪贴板');
+            }).catch(err => {
+                showNotification('复制失败，请手动复制', false);
+                console.error('复制失败: ', err);
+            });
+        }
+
+        // 显示通知
+        function showNotification(message, isSuccess = true) {
+            const notification = document.getElementById('notification');
+            const notificationText = document.getElementById('notificationText');
+            
+            notificationText.textContent = message;
+            notification.classList.toggle('bg-gray-800', isSuccess);
+            notification.classList.toggle('bg-red-600', !isSuccess);
+            notification.querySelector('i').classList.toggle('text-green-400', isSuccess);
+            notification.querySelector('i').classList.toggle('text-white', !isSuccess);
+            notification.querySelector('i').classList.toggle('fa-check-circle', isSuccess);
+            notification.querySelector('i').classList.toggle('fa-exclamation-circle', !isSuccess);
+            
+            notification.classList.remove('translate-x-full');
+            notification.classList.add('translate-x-0');
+            
+            setTimeout(() => {
+                notification.classList.remove('translate-x-0');
+                notification.classList.add('translate-x-full');
+            }, 3000);
+        }
+
+        // 返回顶部按钮
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId !== '#') {
+                    document.querySelector(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // 页面加载动画
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.add('opacity-100');
+            document.body.classList.remove('opacity-0');
+        });
+    </script>
+</body>
+</html>
