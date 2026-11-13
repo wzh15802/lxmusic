@@ -2,6 +2,8 @@
 洛雪音乐-音源
 洛雪软件 https://github.com/lyswhut/lx-music-desktop/releases
 
+洛雪在线音源整合：https://www.iwmzh.com/lxmusic
+
 均收集自开放网络，不对音源稳定性，可用性，时效性提供任何保证。
 -------
 
@@ -27,30 +29,8 @@ MusicFree-音源
 以下音源均收集自开放网络，不对音源稳定性，可用性，时效性提供任何保证。
 -------
 
+MusicFree在线音源整合: https://www.iwmzh.com/musicfree
 
-在线插件(从网络安装插件)：      https://www.imwzh.com/musicfree.json  
-已整理合并以下大佬的源。
-
-整合后插件本地包(同以上在线插件)：https://wwfo.lanzoue.com/i933R31kewcd
-
-其中，元力源最高支持到wy无损（最新-1.2.0版本）: https://13413.kstore.vip/yuanli/yuanli.json   
-
-~~元力0.1.0版本已失效：https://13413.kstore.vip/yuanli/%E5%85%83%E5%8A%9B%E9%9F%B3%E4%B9%90.json~~
-
--------
-作者：         https://gitee.com/maotoumao/MusicFreePlugins/raw/master/plugins.json
-
-种子：         https://gitee.com/kevinr/tvbox/raw/master/musicfree/plugins/zz.js
-
-无邪：          https://gitee.com/wxej/yy/raw/master/MusicFree.json
-
-彩桐：          http://cdn.teyonds.com/music/plugins.json
-
-小秋：          http://music.haitangw.net/cqapi/qq.js
-
-Huibq          https://fastly.jsdelivr.net/gh/Huibq/keep-alive/Music_Free/xiaoyun.js
-
--------
 
 
 # 青听音乐
@@ -110,6 +90,11 @@ https://mp3yt.is/
 https://flac.music.hi.cn/
 
 支持ku我和网抑Y，最高支持FLAC。自主搜索可听可下
+
+
+https://1music.cc/zh-CN
+
+目测调用JOOX渠道，最高支持FLAC。自主搜索可听可下
 
 ### 其他边角料
 
