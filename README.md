@@ -2,7 +2,7 @@
 洛雪音乐-音源
 洛雪软件 https://github.com/lyswhut/lx-music-desktop/releases
 
-洛雪在线音源整合：https://www.iwmzh.com/lxmusic
+洛雪在线音源整合：https://www.imwzh.com/lxmusic
 
 均收集自开放网络，不对音源稳定性，可用性，时效性提供任何保证。
 -------
@@ -29,7 +29,7 @@ MusicFree-音源
 以下音源均收集自开放网络，不对音源稳定性，可用性，时效性提供任何保证。
 -------
 
-MusicFree在线音源整合: https://www.iwmzh.com/musicfree
+MusicFree在线音源整合: https://www.imwzh.com/musicfree
 
 
 
